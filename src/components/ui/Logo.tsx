@@ -13,7 +13,7 @@ export default function Logo({ className = "", iconOnly = false, light = false }
       {/* Optima Safety Solutions Logo Icon */}
       <div className="relative flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105">
         <Image
-          src="/images/hero/logo-icon-v3.png"
+          src="/images/hero/logo-icon-v4.png"
           alt="Optima Safety Solutions Logo"
           fill
           sizes="48px"
@@ -26,16 +26,14 @@ export default function Logo({ className = "", iconOnly = false, light = false }
       {!iconOnly && (
         <div className="flex flex-col leading-tight">
           <span
-            className={`text-xl font-bold tracking-tight transition-colors duration-200 ${
-              light ? "text-white" : "text-primary-700"
-            }`}
+            className={`text-xl font-bold tracking-tight transition-colors duration-200 ${light ? "text-white" : "text-primary-700"
+              }`}
           >
             Optima Safety Solutions
           </span>
           <span
-            className={`text-[10px] font-semibold uppercase tracking-[0.18em] transition-colors duration-200 ${
-              light ? "text-slate-400" : "text-slate-500"
-            }`}
+            className={`text-[10px] font-semibold uppercase tracking-[0.18em] transition-colors duration-200 ${light ? "text-slate-400" : "text-slate-500"
+              }`}
           >
             Safety Nets & Invisible Grills
           </span>
