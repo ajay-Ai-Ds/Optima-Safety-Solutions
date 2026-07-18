@@ -73,6 +73,9 @@ export const metadata: Metadata = {
       "Premium safety nets and invisible grill installers in Chennai, Tamil Nadu.",
     images: ["/images/og-image.webp"],
   },
+  verification: {
+    google: "d8M08Zx_AjleRzau6ULFXZTJrlc1VpK3w_GkUvlhNvc",
+  },
 };
 
 
