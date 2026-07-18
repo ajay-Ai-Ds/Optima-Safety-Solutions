@@ -32,19 +32,30 @@
   --foreground: #042f2e;
 }
 
+/* =========================================
+   Base Reset & Typography
+   ========================================= */
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  /* Prevent text from overflowing on all viewports */
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
+  /* Headings must never clip mid-word on narrow screens */
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-/* Custom premium scrollbar */
+/* =========================================
+   Custom premium scrollbar
+   ========================================= */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -59,16 +70,32 @@ h1, h2, h3, h4, h5, h6 {
   background: #94a3b8;
 }
 
-/* Text Gradient Utility */
+/* =========================================
+   Text Gradient Utility
+   ========================================= */
 .text-gradient {
   background: linear-gradient(135deg, #0f766e 0%, #042f2e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Custom scroll-margin for anchor links */
+/* =========================================
+   Anchor scroll offset (navbar height compensation)
+   ========================================= */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
 
+/* =========================================
+   Ken Burns zoom animation — used in HeroCarousel
+   Defined globally to avoid inline <style> injection on every render
+   ========================================= */
+@keyframes kenBurns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+
+.ken-burns-active {
+  animation: kenBurns 3700ms ease-out forwards;
+}

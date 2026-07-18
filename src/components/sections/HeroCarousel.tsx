@@ -185,13 +185,9 @@ export default function HeroCarousel() {
           >
             {/* Ken Burns effect */}
             <div
-              className="relative w-full h-full overflow-hidden"
-              style={{
-                animation:
-                  idx === activeIndex
-                    ? `kenBurns ${AUTOPLAY_INTERVAL + TRANSITION_DURATION}ms ease-out forwards`
-                    : "none",
-              }}
+              className={`relative w-full h-full overflow-hidden${
+                idx === activeIndex ? " ken-burns-active" : ""
+              }`}
             >
               <Image
                 src={slide.image}
@@ -301,13 +297,6 @@ export default function HeroCarousel() {
         ))}
       </div>
 
-      {/* Ken Burns keyframe animation */}
-      <style>{`
-        @keyframes kenBurns {
-          from { transform: scale(1); }
-          to   { transform: scale(1.06); }
-        }
-      `}</style>
     </section>
   );
 }

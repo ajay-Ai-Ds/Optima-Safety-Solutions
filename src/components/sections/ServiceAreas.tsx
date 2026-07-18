@@ -65,7 +65,7 @@ export default function ServiceAreas() {
                   className="flex items-center gap-2.5 p-3.5 bg-slate-50 hover:bg-orange-50/50 hover:border-accent-orange/30 border border-slate-100 rounded-xl transition-all group cursor-default"
                 >
                   <MapPin className="w-4 h-4 text-slate-500 group-hover:text-accent-orange shrink-0 transition-colors" />
-                  <span className="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-slate-900 transition-colors truncate">
+                  <span className="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-slate-900 transition-colors break-words leading-snug">
                     {area}
                   </span>
                 </motion.div>

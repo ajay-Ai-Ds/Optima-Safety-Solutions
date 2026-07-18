@@ -130,18 +130,18 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* Mobile Hamburger Menu Toggle */}
-            <div className="flex xl:hidden items-center gap-3">
+            {/* Mobile Hamburger Menu Toggle — p-3 = 48px touch target (WCAG 2.5.5) */}
+            <div className="flex xl:hidden items-center gap-2">
               <a
                 href="tel:+917893760933"
-                className="p-2 text-slate-700 hover:text-accent-orange transition-colors"
-                aria-label="Call Optima"
+                className="p-3 text-slate-700 hover:text-accent-orange transition-colors rounded-full"
+                aria-label="Call Optima Safety Solutions at +91 78937 60933"
               >
                 <Phone className="w-5 h-5" />
               </a>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 text-slate-800 hover:text-accent-orange transition-colors cursor-pointer"
+                className="p-3 text-slate-800 hover:text-accent-orange transition-colors cursor-pointer rounded-full"
                 aria-expanded={isMobileMenuOpen}
                 aria-label="Toggle navigation menu"
               >

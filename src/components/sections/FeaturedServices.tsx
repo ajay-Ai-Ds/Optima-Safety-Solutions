@@ -73,7 +73,7 @@ export default function FeaturedServices() {
                 >
                   <span className="flex items-center gap-2">
                     {cat === "all" ? null : getCategoryIcon(cat)}
-                    <span>{cat.replace("-", " ")}</span>
+                    <span className="capitalize">{cat === "all" ? "All" : cat.replace(/-/g, " ")}</span>
                   </span>
                 </button>
               )
