@@ -158,7 +158,7 @@ export default function RootLayout({
 
         {/* Google Analytics 4 (GA4) - Standard script for GSC Verification */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZCYPR2V24D"
+          src="https://www.googletagmanager.com/gtag/js?id=G-NWX38J4JJ5"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -166,7 +166,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-ZCYPR2V24D');
+            gtag('config', 'G-NWX38J4JJ5');
           `}
         </Script>
 
