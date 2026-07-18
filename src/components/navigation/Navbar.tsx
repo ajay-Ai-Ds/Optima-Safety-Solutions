@@ -73,8 +73,8 @@ export default function Navbar() {
       <header
         className={`fixed top-[32px] left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? "bg-white shadow-[0_8px_30px_rgba(15,23,42,0.08)] border-b border-slate-100/50 py-3"
-            : "bg-white border-b border-slate-100 py-4"
+            ? "bg-white shadow-[0_8px_30px_rgba(15,23,42,0.08)] border-b border-slate-100/50 py-2 sm:py-3"
+            : "bg-white border-b border-slate-100 py-2.5 sm:py-4"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,12 +83,12 @@ export default function Navbar() {
             <Logo light={false} />
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden xl:flex items-center gap-6">
+            <nav className="hidden xl:flex items-center gap-4 2xl:gap-6 flex-shrink-0">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={`text-sm font-semibold tracking-wide hover:text-accent-orange transition-colors duration-200 ${
+                  className={`text-[13px] 2xl:text-sm font-semibold tracking-wide hover:text-accent-orange transition-colors duration-200 whitespace-nowrap ${
                     isScrolled ? "text-slate-700" : "text-slate-800"
                   }`}
                 >
@@ -98,14 +98,14 @@ export default function Navbar() {
             </nav>
 
             {/* Desktop CTAs */}
-            <div className="hidden xl:flex items-center gap-3">
+            <div className="hidden xl:flex items-center gap-2 2xl:gap-3 flex-shrink-0">
               {/* Phone CTA */}
               <a
                 href="tel:+917893760933"
-                className="flex items-center gap-2 text-xs font-bold text-slate-700 hover:text-accent-orange transition-colors duration-200 border border-slate-300 rounded-full px-4 py-2"
+                className="flex items-center gap-1.5 2xl:gap-2 text-[11px] 2xl:text-xs font-bold text-slate-700 hover:text-accent-orange transition-colors duration-200 border border-slate-300 rounded-full px-3 py-1.5 2xl:px-4 2xl:py-2 whitespace-nowrap"
                 aria-label="Call Optima Safety Solutions"
               >
-                <Phone className="w-3.5 h-3.5" />
+                <Phone className="w-3 h-3 2xl:w-3.5 2xl:h-3.5" />
                 <span>+91 78937 60933</span>
               </a>
 
@@ -114,19 +114,19 @@ export default function Navbar() {
                 href="https://wa.me/917893760933?text=Hi%20Optima%20Safety%20Solutions%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center p-2 text-success-green hover:bg-emerald-50 rounded-full transition-colors duration-200"
+                className="flex items-center justify-center p-1.5 2xl:p-2 text-success-green hover:bg-emerald-50 rounded-full transition-colors duration-200 flex-shrink-0"
                 aria-label="Chat on WhatsApp"
               >
-                <MessageSquare className="w-5 h-5 fill-success-green/10" />
+                <MessageSquare className="w-4 h-4 2xl:w-5 2xl:h-5 fill-success-green/10" />
               </a>
 
               {/* Request Quote Button */}
               <Link
                 href="#contact"
-                className="bg-primary-700 text-white text-xs font-bold px-5 py-2.5 rounded-full hover:bg-accent-orange transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-1.5"
+                className="bg-primary-700 text-white text-[11px] 2xl:text-xs font-bold px-4 py-2 2xl:px-5 2xl:py-2.5 rounded-full hover:bg-accent-orange transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-1.5 whitespace-nowrap flex-shrink-0"
               >
                 <span>Request Quote</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <ArrowRight className="w-3 h-3 2xl:w-3.5 2xl:h-3.5" />
               </Link>
             </div>
 
