@@ -23,7 +23,7 @@ export default function GalleryPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Photo Gallery | Optima Safety Solutions",
-    "url": "https://www.optimasafetysolutions.com/gallery",
+    "url": "https://www.optimasafetysolutions.in/gallery",
     "description": "Photo archives of completed netting and invisible grill setups by Optima in Chennai.",
   };
 

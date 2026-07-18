@@ -48,13 +48,13 @@ export default function ServicesPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.optimasafetysolutions.com",
+        "item": "https://www.optimasafetysolutions.in",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.optimasafetysolutions.com/services",
+        "item": "https://www.optimasafetysolutions.in/services",
       },
     ],
   };

@@ -8,8 +8,8 @@ export function generateOrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Optima Safety Solutions",
-    "url": "https://www.optimasafetysolutions.com",
-    "logo": "https://www.optimasafetysolutions.com/images/logo.png",
+    "url": "https://www.optimasafetysolutions.in",
+    "logo": "https://www.optimasafetysolutions.in/images/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-78937-60933",
@@ -24,12 +24,12 @@ export function generateLocalBusinessSchema(areaName?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": `https://www.optimasafetysolutions.com/#localbusiness${areaName ? `-${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
+    "@id": `https://www.optimasafetysolutions.in/#localbusiness${areaName ? `-${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
     "name": `Optima Safety Solutions${areaName ? ` - ${areaName}` : ""}`,
-    "url": `https://www.optimasafetysolutions.com${areaName ? `/areas/${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
+    "url": `https://www.optimasafetysolutions.in${areaName ? `/areas/${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
     "telephone": "+91 78937 60933",
     "email": "optimasafetysolutions77@gmail.com",
-    "image": "https://www.optimasafetysolutions.com/images/og-image.webp",
+    "image": "https://www.optimasafetysolutions.in/images/og-image.webp",
     "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
@@ -65,11 +65,11 @@ export function generateWebSiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://www.optimasafetysolutions.com",
+    "url": "https://www.optimasafetysolutions.in",
     "name": "Optima Safety Solutions",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.optimasafetysolutions.com/search?q={search_term_string}",
+      "target": "https://www.optimasafetysolutions.in/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -83,7 +83,7 @@ export function generateBreadcrumbSchema(links: SchemaBreadcrumb[]) {
       "@type": "ListItem",
       "position": index + 1,
       "name": link.name,
-      "item": link.item.startsWith("http") ? link.item : `https://www.optimasafetysolutions.com${link.item}`,
+      "item": link.item.startsWith("http") ? link.item : `https://www.optimasafetysolutions.in${link.item}`,
     })),
   };
 }
@@ -134,14 +134,14 @@ export function generateArticleSchema(title: string, description: string, image:
     "author": {
       "@type": "Organization",
       "name": "Optima Safety Solutions",
-      "url": "https://www.optimasafetysolutions.com",
+      "url": "https://www.optimasafetysolutions.in",
     },
     "publisher": {
       "@type": "Organization",
       "name": "Optima Safety Solutions",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.optimasafetysolutions.com/images/logo.png",
+        "url": "https://www.optimasafetysolutions.in/images/logo.png",
       },
     },
   };

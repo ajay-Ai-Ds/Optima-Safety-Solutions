@@ -6,7 +6,7 @@ import { blogData } from "@/utils/blogData";
 import { categoriesList, localitiesList } from "@/utils/localityContent";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.optimasafetysolutions.com";
+  const baseUrl = "https://www.optimasafetysolutions.in";
 
   // 1. Static Routes
   const staticRoutes = [

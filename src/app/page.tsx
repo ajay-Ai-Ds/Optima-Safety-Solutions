@@ -19,10 +19,10 @@ export default function Home() {
   const searchActionSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://www.optimasafetysolutions.com",
+    "url": "https://www.optimasafetysolutions.in",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.optimasafetysolutions.com/search?q={search_term_string}",
+      "target": "https://www.optimasafetysolutions.in/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

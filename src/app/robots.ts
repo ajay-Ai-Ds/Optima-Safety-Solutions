@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         "/_next/",
       ],
     },
-    sitemap: "https://www.optimasafetysolutions.com/sitemap.xml",
+    sitemap: "https://www.optimasafetysolutions.in/sitemap.xml",
   };
 }

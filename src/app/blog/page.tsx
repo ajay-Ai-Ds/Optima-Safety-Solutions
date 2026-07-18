@@ -27,7 +27,7 @@ export default async function BlogPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Safety and Home Childproofing Blog | Optima Safety Solutions",
-    "url": "https://www.optimasafetysolutions.com/blog",
+    "url": "https://www.optimasafetysolutions.in/blog",
     "description": "Resources on balcony netting, invisible grills, and safety advice.",
   };
 

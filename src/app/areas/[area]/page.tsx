@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps) {
     openGraph: {
       title: `Safety Nets & Invisible Grills in ${areaDetail.name}, Chennai | Optima`,
       description: `Optima Safety Solutions offers professional balcony safety nets, kid safety grids, and rustproof invisible grills in ${areaDetail.name}, Chennai. Free measurements.`,
-      url: `https://www.optimasafetysolutions.com/areas/${resolvedParams.area}`,
+      url: `https://www.optimasafetysolutions.in/areas/${resolvedParams.area}`,
       images: [
         {
           url: "/images/og-image.webp",
@@ -68,7 +68,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
   const nearbyAreas = areaDetail.nearbySlugs.map((slug) => ({
     slug,
     name: slug
-      .replace("-", " ")
+      .replace(/-/g, " ")
       .replace(/\b\w/g, (c) => c.toUpperCase()),
   }));
 

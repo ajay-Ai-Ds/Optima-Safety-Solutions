@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Ceiling Cloth Hangers Chennai",
     "Optima Safety Solutions Chennai",
   ],
-  metadataBase: new URL("https://www.optimasafetysolutions.com"),
+  metadataBase: new URL("https://www.optimasafetysolutions.in"),
   alternates: {
     canonical: "/",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Optima Safety Solutions | Premium Safety Nets & Invisible Grills",
     description:
       "Expert safety netting and modern invisible grill installation in Chennai. Rest assured with safety nets built for high durability and style.",
-    url: "https://www.optimasafetysolutions.com",
+    url: "https://www.optimasafetysolutions.in",
     siteName: "Optima Safety Solutions",
     images: [
       {
@@ -77,19 +77,19 @@ export default function RootLayout({
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://www.optimasafetysolutions.com/#localbusiness",
+    "@id": "https://www.optimasafetysolutions.in/#localbusiness",
     "name": "Optima Safety Solutions",
-    "url": "https://www.optimasafetysolutions.com",
+    "url": "https://www.optimasafetysolutions.in",
     "telephone": "+91 78937 60933",
     "email": "optimasafetysolutions77@gmail.com",
-    "image": "https://www.optimasafetysolutions.com/images/og-image.webp",
+    "image": "https://www.optimasafetysolutions.in/images/og-image.webp",
     "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Chennai",
+      "streetAddress": "17/7, Rajeswari St, Kamarajar Nagar, NGO Colony, Choolaimedu",
       "addressLocality": "Chennai",
       "addressRegion": "Tamil Nadu",
-      "postalCode": "600001",
+      "postalCode": "600094",
       "addressCountry": "IN",
     },
     "geo": {
@@ -118,8 +118,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Optima Safety Solutions",
-    "url": "https://www.optimasafetysolutions.com",
-    "logo": "https://www.optimasafetysolutions.com/images/logo.png",
+    "url": "https://www.optimasafetysolutions.in",
+    "logo": "https://www.optimasafetysolutions.in/images/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-78937-60933",
@@ -159,19 +159,19 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Tag Manager (GTM) placeholder */}
-        <Script id="gtm" strategy="lazyOnload">
+        {/* Google Tag Manager (GTM) - Replace GTM-XXXXXXX with your actual GTM ID before enabling */}
+        {/* <Script id="gtm" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-TEMPLATE_ID');
+            })(window,document,'script','dataLayer','GTM-XXXXXXX');
           `}
-        </Script>
+        </Script> */}
 
-        {/* Microsoft Clarity placeholder */}
-        <Script id="microsoft-clarity" strategy="lazyOnload">
+        {/* Microsoft Clarity - Replace CLARITY_PROJECT_ID with your actual Clarity ID before enabling */}
+        {/* <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -179,7 +179,7 @@ export default function RootLayout({
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
                 })(window, document, "clarity", "script", "CLARITY_PROJECT_ID");
               `}
-        </Script>
+        </Script> */}
       </head>
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 selection:bg-accent-orange selection:text-white">
         <Navbar />

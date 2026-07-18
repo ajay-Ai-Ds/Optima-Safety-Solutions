@@ -23,19 +23,19 @@ export default function SafetyNetsCategoryPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.optimasafetysolutions.com",
+        "item": "https://www.optimasafetysolutions.in",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.optimasafetysolutions.com/services",
+        "item": "https://www.optimasafetysolutions.in/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Safety Nets",
-        "item": "https://www.optimasafetysolutions.com/services/safety-nets",
+        "item": "https://www.optimasafetysolutions.in/services/safety-nets",
       },
     ],
   };

@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: PageProps) {
     openGraph: {
       title: `${serviceDetail.title}`,
       description: serviceDetail.description,
-      url: `https://www.optimasafetysolutions.com/services/${resolvedParams.service}`,
+      url: `https://www.optimasafetysolutions.in/services/${resolvedParams.service}`,
       images: [
         {
           url: serviceDetail.image,

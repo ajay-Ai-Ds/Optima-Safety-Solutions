@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PageProps) {
       openGraph: {
         title: content.title,
         description: content.metaDescription,
-        url: `https://www.optimasafetysolutions.com/services/${resolvedParams.service}/${resolvedParams.locality}`,
+        url: `https://www.optimasafetysolutions.in/services/${resolvedParams.service}/${resolvedParams.locality}`,
         type: "website",
         images: [
           {
@@ -88,7 +88,7 @@ export default async function LocalityServiceDetailPage({ params }: PageProps) {
   }
 
   const localityFormatted = resolvedParams.locality
-    .replace("-", " ")
+    .replace(/-/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());
 
   // Breadcrumb List Schema
@@ -100,25 +100,25 @@ export default async function LocalityServiceDetailPage({ params }: PageProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.optimasafetysolutions.com",
+        "item": "https://www.optimasafetysolutions.in",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.optimasafetysolutions.com/services",
+        "item": "https://www.optimasafetysolutions.in/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": serviceDetail.categoryName,
-        "item": `https://www.optimasafetysolutions.com/services/${serviceDetail.category}`,
+        "item": `https://www.optimasafetysolutions.in/services/${serviceDetail.category}`,
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": content.h1,
-        "item": `https://www.optimasafetysolutions.com/services/${resolvedParams.service}/${resolvedParams.locality}`,
+        "item": `https://www.optimasafetysolutions.in/services/${resolvedParams.service}/${resolvedParams.locality}`,
       },
     ],
   };
@@ -130,8 +130,8 @@ export default async function LocalityServiceDetailPage({ params }: PageProps) {
     "name": "Optima Safety Solutions",
     "telephone": "+91 78937 60933",
     "email": "optimasafetysolutions77@gmail.com",
-    "url": `https://www.optimasafetysolutions.com/services/${resolvedParams.service}/${resolvedParams.locality}`,
-    "image": "https://www.optimasafetysolutions.com/images/og-image.webp",
+    "url": `https://www.optimasafetysolutions.in/services/${resolvedParams.service}/${resolvedParams.locality}`,
+    "image": "https://www.optimasafetysolutions.in/images/og-image.webp",
     "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
