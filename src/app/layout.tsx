@@ -18,6 +18,10 @@ const inter = Inter({
   display: "swap",
 });
 
+export const viewport = {
+  themeColor: "#0f766e",
+};
+
 export const metadata: Metadata = {
   title: "Optima Safety Solutions | Premium Safety Nets & Invisible Grills Chennai",
   description:
@@ -37,6 +41,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/images/hero/logo-icon-v3.png",
+    apple: "/images/hero/logo-icon-v3.png",
+  },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Optima",
   },
   openGraph: {
     title: "Optima Safety Solutions | Premium Safety Nets & Invisible Grills",
@@ -64,9 +75,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport = {
-  themeColor: "#0f766e",
-};
 
 export default function RootLayout({
   children,

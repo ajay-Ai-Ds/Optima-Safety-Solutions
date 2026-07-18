@@ -10,6 +10,11 @@ export function generateOrganizationSchema() {
     "name": "Optima Safety Solutions",
     "url": "https://www.optimasafetysolutions.in",
     "logo": "https://www.optimasafetysolutions.in/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/optimasafetysolutions",
+      "https://www.instagram.com/optimasafetysolutions",
+      "https://www.linkedin.com/company/optimasafetysolutions"
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-78937-60933",

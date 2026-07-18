@@ -100,7 +100,7 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-accent-orange shrink-0" />
                 <div>
                   <span className="font-semibold text-white block">Phone Number</span>
-                  <a href="tel:+917893760933" className="hover:text-white transition-colors">
+                  <a href="tel:+917893760933" className="hover:text-white transition-colors" aria-label="Call Optima Safety Solutions at +91 78937 60933">
                     +91 78937 60933
                   </a>
                 </div>
@@ -109,7 +109,7 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-accent-orange shrink-0" />
                 <div>
                   <span className="font-semibold text-white block">Email Address</span>
-                  <a href="mailto:optimasafetysolutions77@gmail.com" className="hover:text-white transition-colors">
+                  <a href="mailto:optimasafetysolutions77@gmail.com" className="hover:text-white transition-colors" aria-label="Email Optima Safety Solutions">
                     optimasafetysolutions77@gmail.com
                   </a>
                 </div>
