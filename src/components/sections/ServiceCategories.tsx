@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Shield, Eye, Settings, ArrowRight } from "lucide-react";
+import { Shield, Eye, Settings, ArrowRight, Trophy, Target } from "lucide-react";
 
 interface Category {
   id: number;
@@ -19,7 +19,7 @@ const categories: Category[] = [
   {
     id: 1,
     name: "Safety Nets",
-    count: "9 Services Available",
+    count: "7 Services Available",
     image: "/images/hero/safetynets.webp",
     icon: <Shield className="w-6 h-6 text-white" />,
     description: "Secure your balconies, staircases, and ducts with high-density polyethylene netting designed for children and pet safety.",
@@ -42,6 +42,24 @@ const categories: Category[] = [
     icon: <Settings className="w-6 h-6 text-white" />,
     description: "Install dual-pipe pulley ceiling cloth drying hangers or balcony wall-mounted hangers to maximize space and drying efficiency.",
     slug: "cloth-hangers",
+  },
+  {
+    id: 4,
+    name: "Sports Nets",
+    count: "1 Service Available",
+    image: "/images/hero/sports-safety.webp",
+    icon: <Trophy className="w-6 h-6 text-white" />,
+    description: "High-impact boundary netting for football grounds, cricket pitches, and school terraces.",
+    slug: "sports-nets",
+  },
+  {
+    id: 5,
+    name: "Cricket Practice Nets",
+    count: "1 Service Available",
+    image: "/images/hero/cricketpracticenet.jpg",
+    icon: <Target className="w-6 h-6 text-white" />,
+    description: "Professional multi-lane indoor and outdoor cricket nets custom installed for residences and clubs.",
+    slug: "cricket-nets",
   },
 ];
 

@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Shield, Eye, Settings, ArrowRight, X } from "lucide-react";
+import { Shield, Eye, Settings, ArrowRight, X, Trophy, Target } from "lucide-react";
 import { servicesData } from "@/utils/servicesData";
 
-type CategoryFilter = "all" | "safety-nets" | "invisible-grills" | "cloth-hangers";
+type CategoryFilter = "all" | "safety-nets" | "invisible-grills" | "cloth-hangers" | "sports-nets" | "cricket-nets";
 
 export default function FeaturedServices() {
   const [filter, setFilter] = useState<CategoryFilter>("all");
@@ -36,6 +36,10 @@ export default function FeaturedServices() {
         return <Eye className="w-4 h-4" />;
       case "cloth-hangers":
         return <Settings className="w-4 h-4" />;
+      case "sports-nets":
+        return <Trophy className="w-4 h-4" />;
+      case "cricket-nets":
+        return <Target className="w-4 h-4" />;
       default:
         return null;
     }
@@ -60,7 +64,7 @@ export default function FeaturedServices() {
 
           {/* Filter Tabs */}
           <div className="flex flex-wrap gap-2 md:self-end">
-            {(["all", "safety-nets", "invisible-grills", "cloth-hangers"] as CategoryFilter[]).map(
+            {(["all", "safety-nets", "invisible-grills", "cloth-hangers", "sports-nets", "cricket-nets"] as CategoryFilter[]).map(
               (cat) => (
                 <button
                   key={cat}

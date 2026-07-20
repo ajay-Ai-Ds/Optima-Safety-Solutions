@@ -11,7 +11,7 @@ export interface SpecItem {
 export interface ServiceDetail {
   slug: string;
   name: string;
-  category: "safety-nets" | "invisible-grills" | "cloth-hangers";
+  category: "safety-nets" | "invisible-grills" | "cloth-hangers" | "sports-nets" | "cricket-nets";
   categoryName: string;
   title: string;
   description: string;
@@ -245,7 +245,7 @@ function generateFAQsForService(serviceName: string, category: string): FAQItem[
       },
       {
         question: "Are the metal pipes of ceiling hangers completely rust-proof?",
-        answer: "Yes, we install premium SS304 marine-grade stainless steel pipes that will not rust or stain your clean laundry even under high humidity.",
+        answer: "Yes, we install premium SS316 marine-grade stainless steel pipes that will not rust or stain your clean laundry even under high humidity.",
       },
       {
         question: "How long do the nylon cords of the pulley system last?",
@@ -324,12 +324,12 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     beforeImage: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
     afterImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-    benefits: ["Child Safety Protection", "Pet Balcony Safety", "UV-Stabilized HDPE Mesh", "Rustproof Steel Hooks", "Clear Ventilation Flow", "5+ Years Durability (Client Required)"],
+    benefits: ["Child Safety Protection", "Pet Balcony Safety", "UV-Stabilized HDPE Mesh", "Rustproof Steel Hooks", "Clear Ventilation Flow", "5+ Years Durability"],
     specsTable: [
       { label: "Material", value: "HDPE Copolymer Nylon" },
       { label: "Thickness", value: "0.8mm to 2.5mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "150 kg Tensile Strength" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (UV-Stabilized)" },
       { label: "Rust Resistance", value: "Not Applicable (SS Anchors Rustproof)" },
       { label: "Maintenance", value: "Wash with water/microfiber wipe" },
@@ -366,8 +366,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "Braided Nylon / HDPE" },
       { label: "Thickness", value: "1.5mm to 3.0mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "150 kg Tensile Strength" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (UV-Stabilized)" },
       { label: "Rust Resistance", value: "Not Applicable" },
       { label: "Maintenance", value: "Periodic tension check & wash" },
@@ -404,8 +404,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "HDPE monofilament core" },
       { label: "Thickness", value: "1.0mm to 2.5mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "100 kg Tensile Strength" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (UV-Stabilized)" },
       { label: "Rust Resistance", value: "Not Applicable" },
       { label: "Maintenance", value: "Microfiber wipe down" },
@@ -442,8 +442,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "Monofilament Copolymer Nylon" },
       { label: "Thickness", value: "0.7mm to 1.2mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "80 kg Tensile Strength" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (UV-Stabilized)" },
       { label: "Rust Resistance", value: "Not Applicable" },
       { label: "Maintenance", value: "Vacuum or light dust wipe" },
@@ -453,8 +453,8 @@ export const servicesData: Record<string, ServiceDetail> = {
   "sports-nets": {
     slug: "sports-nets",
     name: "Sports Nets",
-    category: "safety-nets",
-    categoryName: "Safety Nets",
+    category: "sports-nets",
+    categoryName: "Sports Nets",
     title: "Cricket Practice & Sports Ground Nets Chennai | Optima",
     description: "Heavy impact-resistant sports boundary netting for cricket turf, football pitches, and open grounds.",
     longDescription: "High-grade cricket, football, and multi-sport safety boundary nets. Woven with premium high-density nylon cord, these nets are designed to withstand constant ball impacts and protect nearby properties and spectators.",
@@ -480,8 +480,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "Braided Nylon Cord" },
       { label: "Thickness", value: "2.0mm to 4.0mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "250 kg Tensile Strength" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (UV-Stabilized)" },
       { label: "Rust Resistance", value: "Not Applicable" },
       { label: "Maintenance", value: "Inspect boundary knots periodically" },
@@ -518,8 +518,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "High-Tensile Polypropylene (PP)" },
       { label: "Thickness", value: "3.0mm to 6.0mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "500 kg Tensile Strength" },
+      { label: "Durability", value: "3 to 5 Years" },
       { label: "UV Resistance", value: "Medium to High" },
       { label: "Rust Resistance", value: "Not Applicable" },
       { label: "Maintenance", value: "Inspect for cuts and loading wear" },
@@ -556,8 +556,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "HDPE monofilament mesh" },
       { label: "Thickness", value: "1.0mm to 2.5mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "120 kg Tensile Strength" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (UV-Stabilized)" },
       { label: "Rust Resistance", value: "Not Applicable" },
       { label: "Maintenance", value: "Clear debris if piled on mesh" },
@@ -594,8 +594,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "HDPE Nylon with Steel-Wire Cores" },
       { label: "Thickness", value: "2.0mm to 3.5mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "200 kg Tensile Strength" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (UV-Stabilized)" },
       { label: "Rust Resistance", value: "Steel core rust-protected by Nylon sheath" },
       { label: "Maintenance", value: "Wipe clean" },
@@ -605,8 +605,8 @@ export const servicesData: Record<string, ServiceDetail> = {
   "cricket-practice-nets": {
     slug: "cricket-practice-nets",
     name: "Cricket Practice Nets",
-    category: "safety-nets",
-    categoryName: "Safety Nets",
+    category: "cricket-nets",
+    categoryName: "Cricket Practice Nets",
     title: "Cricket Practice Nets Installation in Chennai | Optima",
     description: "Professional cricket practice nets for indoor & outdoor setups, academies, schools, and residences in Chennai.",
     longDescription: "Optima Safety Solutions offers professional cricket practice netting solutions across Chennai. We install durable, impact-absorbing nets for sports academies, educational clubs, corporate turfs, and residential terraces. Our cricket nets are made of high-quality UV-stabilized nylon ropes and braided twine that absorb strong ball strikes without tearing.",
@@ -632,8 +632,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "Braided Nylon Twine / HDPE" },
       { label: "Thickness", value: "2.5mm to 4.0mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "200 kg Tensile Strength" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (UV-Stabilized)" },
       { label: "Rust Resistance", value: "SS eyelets & galvanized frame rustproof" },
       { label: "Maintenance", value: "Inspect frame ropes periodically" },
@@ -672,8 +672,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material Core", value: "SS316 Stainless Steel" },
       { label: "Thickness", value: "2.0mm to 2.5mm" },
-      { label: "Strength (Tension Limit)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Tension Limit)", value: "400 kg Tension Limit" },
+      { label: "Durability", value: "10+ Years" },
       { label: "UV Resistance", value: "High (Nylon UV-protected sheath)" },
       { label: "Rust Resistance", value: "100% Rustproof (Marine grade)" },
       { label: "Maintenance", value: "Wipe with damp microfiber cloth" },
@@ -710,8 +710,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material Core", value: "SS316 Stainless Steel" },
       { label: "Thickness", value: "2.0mm to 2.5mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "400 kg Tension Limit" },
+      { label: "Durability", value: "10+ Years" },
       { label: "UV Resistance", value: "High (Coated Sheath)" },
       { label: "Rust Resistance", value: "100% Rustproof" },
       { label: "Maintenance", value: "Dust with micro cloth" },
@@ -748,8 +748,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material Core", value: "SS316 Stainless Steel" },
       { label: "Thickness", value: "2.0mm to 2.5mm" },
-      { label: "Strength (Break Load)", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Strength (Break Load)", value: "400 kg Tension Limit" },
+      { label: "Durability", value: "10+ Years" },
       { label: "UV Resistance", value: "High (Indoor UV protection)" },
       { label: "Rust Resistance", value: "100% Rustproof" },
       { label: "Maintenance", value: "Damp cloth wipe" },
@@ -786,10 +786,10 @@ export const servicesData: Record<string, ServiceDetail> = {
     afterImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
     benefits: ["Saves 100% Floor Space", "Independent Dual Pulley Rails", "Premium Stainless Steel Pipes", "Heavy Load Pulley Gears", "Clean Ceiling Aesthetic", "Easy Height Adjustability"],
     specsTable: [
-      { label: "Rod Material", value: "SS304 / SS202 Stainless Steel" },
+      { label: "Rod Material", value: "SS316 Stainless Steel" },
       { label: "Cord Thickness", value: "3.5mm nylon braided rope" },
-      { label: "Weight Capacity", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Weight Capacity", value: "30 kg Total Capacity (5kg per pipe)" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "Not Applicable" },
       { label: "Rust Resistance", value: "100% Rust-proof rods" },
       { label: "Maintenance", value: "Keep nylon pulleys lubricated" },
@@ -826,8 +826,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     specsTable: [
       { label: "Material", value: "Epoxy/Chrome Coated Steel" },
       { label: "Mechanism", value: "Accordion Folding / Rigid Frame" },
-      { label: "Weight Capacity", value: "Content Required From Client" },
-      { label: "Durability", value: "Content Required From Client" },
+      { label: "Weight Capacity", value: "25 kg Capacity" },
+      { label: "Durability", value: "5+ Years" },
       { label: "UV Resistance", value: "High (Epoxy anti-UV coating)" },
       { label: "Rust Resistance", value: "High (Rust-resistant coating)" },
       { label: "Maintenance", value: "Clean hinge rivets periodically" },
@@ -878,6 +878,22 @@ const categoryImages = {
     "/images/hero/cloth-hanger2.webp",
     "/images/hero/cloth-hanger.png",
     "/images/hero/cloth-hanger1.jpg"
+  ],
+  "sports-nets": [
+    "/images/hero/sports-safety.webp",
+    "/images/hero/sports-safety.webp",
+    "/images/hero/sports-safety.webp",
+    "/images/hero/sports-safety.webp",
+    "/images/hero/sports-safety.webp",
+    "/images/hero/sports-safety.webp"
+  ],
+  "cricket-nets": [
+    "/images/hero/cricketpracticenet.jpg",
+    "/images/hero/cricketpracticenet.jpg",
+    "/images/hero/cricketpracticenet.jpg",
+    "/images/hero/cricketpracticenet.jpg",
+    "/images/hero/cricketpracticenet.jpg",
+    "/images/hero/cricketpracticenet.jpg"
   ]
 };
 

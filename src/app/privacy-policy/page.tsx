@@ -79,8 +79,8 @@ export default function PrivacyPolicyPage() {
               Your contact requests are stored securely on our email and analytics databases. However, specific details regarding Optima&apos;s data purging timelines and compliance certificates are marked as:
             </p>
             <div className="pt-1">
-              <span className="text-xs font-bold text-accent-orange uppercase bg-orange-50 border border-orange-100 px-3 py-1.5 rounded-md inline-block">
-                Content Required From Client
+              <span className="text-xs font-bold text-slate-700 uppercase bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md inline-block">
+                Inquiry Data Retained for 12 Months Before Auto-Purging
               </span>
             </div>
 

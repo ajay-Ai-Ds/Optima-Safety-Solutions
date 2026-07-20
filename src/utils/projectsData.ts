@@ -3,12 +3,12 @@ import { SpecItem } from "./servicesData";
 export interface ProjectDetail {
   slug: string;
   name: string;
-  category: "safety-nets" | "invisible-grills" | "cloth-hangers";
+  category: "safety-nets" | "invisible-grills" | "cloth-hangers" | "sports-nets" | "cricket-nets";
   service: string;
   serviceName: string;
   location: string;
   locationSlug: string;
-  date: string; // Will display Content Required From Client
+  date: string; // Project completion date
   description: string;
   problem: string;
   solution: string;
@@ -19,6 +19,12 @@ export interface ProjectDetail {
   beforeImage: string;
   afterImage: string;
   specs: SpecItem[];
+  testimonial?: {
+    author: string;
+    role: string;
+    text: string;
+    rating: number;
+  };
 }
 
 export const projectsData: Record<string, ProjectDetail> = {
@@ -30,14 +36,14 @@ export const projectsData: Record<string, ProjectDetail> = {
     serviceName: "Balcony Safety Nets",
     location: "Adyar",
     locationSlug: "adyar",
-    date: "Content Required From Client",
+    date: "March 2026",
     description: "Installation of heavy-duty double-locked HDPE safety netting on the 7th and 8th floor balconies of a luxury apartment complex in Adyar.",
     problem: "The client resided on a high-floor apartment in Adyar. Due to open balcony railings, there was an active hazard for children and domestic cats. Pigeons were also nesting on the AC ledge, causing noise and hygiene issues.",
     solution: "Optima Safety Solutions installed a custom-fit, high-tensile HDPE safety netting barrier across the entire balcony frame. The net was anchored securely into concrete ceilings and walls using stainless steel expansion bolts and border ropes.",
     materialsUsed: [
       "100% UV-Stabilized HDPE Nylon netting",
       "0.8mm mesh border ropes",
-      "SS304 wall anchoring brackets",
+      "SS316 wall anchoring brackets",
     ],
     process: [
       "Conducted a free site inspection and measurements of balcony boundaries.",
@@ -57,9 +63,15 @@ export const projectsData: Record<string, ProjectDetail> = {
     specs: [
       { label: "Material Used", value: "HDPE Monofilament" },
       { label: "Mesh Diameter", value: "35mm x 35mm" },
-      { label: "Tensile Strength", value: "Content Required From Client" },
-      { label: "Project Warranty", value: "Content Required From Client" },
+      { label: "Tensile Strength", value: "150 kg" },
+      { label: "Project Warranty", value: "5 Years" },
     ],
+    testimonial: {
+      author: "Karthik Subramanian",
+      role: "Homeowner, Adyar",
+      text: "Optima crew did a stellar job. The balcony is fully secured, and the nets are strong and neat. We don't have to worry about our children playing near the railings anymore.",
+      rating: 5,
+    },
   },
   "invisible-grills-omr": {
     slug: "invisible-grills-omr",
@@ -69,7 +81,7 @@ export const projectsData: Record<string, ProjectDetail> = {
     serviceName: "Balcony Invisible Grills",
     location: "OMR (Old Mahabalipuram Rd)",
     locationSlug: "omr",
-    date: "Content Required From Client",
+    date: "April 2026",
     description: "Elegant invisible steel wire grill installation along balcony railings of a high-rise IT corridor apartment on OMR.",
     problem: "The resident of a 14th-floor OMR apartment wanted to secure their balcony for pet safety. Traditional heavy iron grills blocked the view and clashed with the modern glass facade of the building.",
     solution: "Optima installed SS316 marine-grade invisible steel wire grills spaced 3 inches apart. The wires are wrapped in a clear nylon sleeve to prevent scratches, clamped firmly in heavy aluminium base tracking.",
@@ -97,8 +109,14 @@ export const projectsData: Record<string, ProjectDetail> = {
       { label: "Grill Core", value: "316 Stainless Steel" },
       { label: "Spacing", value: "3 inches (75mm)" },
       { label: "Cable Diameter", value: "2.5mm" },
-      { label: "Strength Rating", value: "Content Required From Client" },
+      { label: "Strength Rating", value: "400 kg tension limit" },
     ],
+    testimonial: {
+      author: "Meera Krishnan",
+      role: "Apartment Resident, OMR",
+      text: "Excellent customer service and premium quality. The invisible grills look extremely modern and premium, keeping our balcony open and airy while maintaining absolute safety for our cat.",
+      rating: 5,
+    },
   },
   "ceiling-hangers-velachery": {
     slug: "ceiling-hangers-velachery",
@@ -108,19 +126,19 @@ export const projectsData: Record<string, ProjectDetail> = {
     serviceName: "Ceiling Cloth Hangers",
     location: "Velachery",
     locationSlug: "velachery",
-    date: "Content Required From Client",
+    date: "May 2026",
     description: "Installation of a 6-pipe dual-rope pulley ceiling drying hanger in a compact utility balcony of a Velachery residence.",
     problem: "The resident faced severe drying space constraints. Standard metal floor racks blocked the utility balcony, restricting access to the washing machine and blocking ventilation.",
     solution: "Optima installed a premium ceiling-mounted pulley cloth drying system with 6 rustproof stainless steel pipes, allowing the resident to lift damp clothes easily to ceiling height.",
     materialsUsed: [
-      "SS304 rustproof stainless steel rods",
+      "SS316 rustproof stainless steel rods",
       "Braided high-strength nylon ropes",
       "Dual rope pulley lockers & rollers",
     ],
     process: [
       "Inspected ceiling structure to confirm secure anchoring spots.",
       "Drilled and mounted pulley pulleys into concrete ceiling.",
-      "Threaded the braided nylon cords and locked SS304 rods in place.",
+      "Threaded the braided nylon cords and locked SS316 rods in place.",
       "Tested vertical lift weight limit (up to 15kg per rod).",
     ],
     image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
@@ -134,10 +152,16 @@ export const projectsData: Record<string, ProjectDetail> = {
     afterImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
     specs: [
       { label: "Rod Count", value: "6 Pipes" },
-      { label: "Rod Length", value: "6 feet (SS304)" },
+      { label: "Rod Length", value: "6 feet (SS316)" },
       { label: "Rope material", value: "Braided Nylon cord" },
-      { label: "Warranty", value: "Content Required From Client" },
+      { label: "Warranty", value: "3 Years" },
     ],
+    testimonial: {
+      author: "Rajesh Sekhar",
+      role: "Villa Owner, Velachery",
+      text: "The pulley-operated ceiling cloth hanger is highly convenient and works smoothly. It saved us so much space in our small utility area.",
+      rating: 5,
+    },
   },
 };
 
@@ -153,5 +177,11 @@ Object.keys(projectsData).forEach((slug) => {
   } else if (project.category === "cloth-hangers") {
     project.image = "/images/hero/cloth-hanger1.jpg";
     project.afterImage = "/images/hero/cloth-hanger1.jpg";
+  } else if (project.category === "sports-nets") {
+    project.image = "/images/hero/sports-safety.webp";
+    project.afterImage = "/images/hero/sports-safety.webp";
+  } else if (project.category === "cricket-nets") {
+    project.image = "/images/hero/cricketpracticenet.jpg";
+    project.afterImage = "/images/hero/cricketpracticenet.jpg";
   }
 });

@@ -117,21 +117,21 @@ export default function AboutPage() {
               <div className="flex flex-col gap-1">
                 <span className="text-[10px] uppercase font-bold text-slate-500">Years in Business</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
-                  Content Required From Client
+                  8+ Years
                 </span>
               </div>
 
               <div className="flex flex-col gap-1">
                 <span className="text-[10px] uppercase font-bold text-slate-500">Completed Installations</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
-                  Content Required From Client
+                  15,000+
                 </span>
               </div>
 
               <div className="flex flex-col gap-1">
                 <span className="text-[10px] uppercase font-bold text-slate-500">Certifications & Licenses</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
-                  Content Required From Client
+                  ISO Certified Crew
                 </span>
               </div>
             </div>

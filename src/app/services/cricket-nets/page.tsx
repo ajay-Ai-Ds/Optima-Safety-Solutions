@@ -1,0 +1,147 @@
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, Home } from "lucide-react";
+import { servicesData } from "@/utils/servicesData";
+
+export const metadata = {
+  title: "Cricket Practice Nets Installation Chennai | Home & Turf Setup",
+  description:
+    "Erect professional cricket practice netting cages on home terraces, backyards, or academies in Chennai. Weatherproof high-impact nets.",
+  alternates: {
+    canonical: "/services/cricket-nets",
+  },
+};
+
+export default function CricketNetsCategoryPage() {
+  const categoryServices = Object.values(servicesData).filter((s) => s.category === "cricket-nets");
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.optimasafetysolutions.in",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://www.optimasafetysolutions.in/services",
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cricket Practice Nets",
+        "item": "https://www.optimasafetysolutions.in/services/cricket-nets",
+      },
+    ],
+  };
+
+  return (
+    <div className="bg-slate-50 min-h-screen py-12">
+      {/* Breadcrumb Schema injection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Breadcrumbs Navigation */}
+        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8" aria-label="Breadcrumb">
+          <Link href="/" className="hover:text-accent-orange flex items-center gap-1">
+            <Home className="w-3.5 h-3.5" />
+            <span>Home</span>
+          </Link>
+          <span>/</span>
+          <Link href="/services" className="hover:text-accent-orange">
+            Services
+          </Link>
+          <span>/</span>
+          <span className="text-slate-600 font-bold">Cricket Practice Nets</span>
+        </nav>
+
+        {/* Title Header */}
+        <div className="text-left max-w-3xl mb-16 flex flex-col gap-3">
+          <span className="text-xs font-bold uppercase tracking-widest text-accent-orange bg-orange-50 px-3.5 py-1.5 rounded-full inline-block self-start">
+            Primary Division
+          </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 tracking-tight leading-tight">
+            Cricket Practice Nets (1 Service)
+          </h1>
+          <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
+            Build your private practice pitch safely. We install heavy-impact cricket netting cages with structural steel support frames designed to absorb hard ball hits without rebounds or netting tears.
+          </p>
+        </div>
+
+        {/* Services List Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {categoryServices.map((service) => (
+            <div
+              key={service.slug}
+              className="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-lg border border-slate-100 transition-all duration-300 group flex flex-col h-full"
+            >
+              <div className="relative h-64 w-full bg-slate-200 overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-accent-orange transition-colors">
+                  {service.name}
+                </h3>
+                <p className="text-slate-500 text-xs leading-relaxed mb-6 flex-grow">
+                  {service.description}
+                </p>
+                <Link
+                  href={`/services/${service.slug}`}
+                  className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-primary-700 hover:text-accent-orange transition-colors group/btn pt-4 border-t border-slate-50 mt-auto"
+                >
+                  <span>View Installation Details</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover/btn:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Locality Quick Links */}
+        <div className="mt-20 pt-10 border-t border-slate-200">
+          <h2 className="text-xl font-bold text-slate-800 mb-6">
+            Cricket Nets Installation Services by Chennai Localities
+          </h2>
+          <p className="text-slate-500 text-xs sm:text-sm mb-6 max-w-2xl">
+            We provide fast, professional cricket nets installation across key areas in Chennai. Explore localized details for your neighborhood:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-semibold">
+            {[
+              { slug: "adyar", name: "Adyar" },
+              { slug: "velachery", name: "Velachery" },
+              { slug: "omr", name: "OMR" },
+              { slug: "ecr", name: "ECR" },
+              { slug: "anna-nagar", name: "Anna Nagar" },
+              { slug: "t-nagar", name: "T. Nagar" },
+              { slug: "porur", name: "Porur" },
+              { slug: "tambaram", name: "Tambaram" }
+            ].map((loc) => (
+              <Link
+                key={loc.slug}
+                href={`/services/cricket-nets/${loc.slug}`}
+                className="flex items-center justify-between p-3.5 bg-white hover:bg-orange-50 border border-slate-100 hover:border-accent-orange/30 rounded-xl transition-all group text-slate-700 hover:text-slate-900"
+              >
+                <span>Cricket Nets in {loc.name}</span>
+                <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-accent-orange transition-transform group-hover:translate-x-1" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

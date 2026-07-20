@@ -193,7 +193,7 @@ export function ServiceRelated({ related, categoryName, categorySlug }: RelatedP
                     className="p-4 bg-slate-50 border border-dashed border-slate-200 rounded-xl flex flex-col gap-2"
                   >
                     <span className="text-[9px] uppercase font-extrabold text-accent-orange tracking-wider bg-orange-50 border border-orange-100 px-2 py-0.5 rounded-sm inline-block self-start leading-none">
-                      Blog Content Required From Client
+                      Safety Guide
                     </span>
                     <span className="text-xs font-bold text-slate-700 leading-snug">
                       {blog.title}

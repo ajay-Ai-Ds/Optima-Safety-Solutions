@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Shield, Eye, Settings, ArrowRight, Home } from "lucide-react";
+import { Shield, Eye, Settings, ArrowRight, Home, Trophy, Target } from "lucide-react";
 import { servicesData } from "@/utils/servicesData";
 
 export const metadata = {
@@ -18,7 +18,7 @@ export default function ServicesPage() {
   const categories = [
     {
       id: "safety-nets",
-      name: "Safety Nets (9 Services)",
+      name: "Safety Nets (7 Services)",
       icon: <Shield className="w-5 h-5 text-accent-orange" />,
       description: "Custom-fitted, high-tensile HDPE safety nets for child safety, pet security, and bird prevention.",
       items: servicesList.filter((s) => s.category === "safety-nets"),
@@ -36,6 +36,20 @@ export default function ServicesPage() {
       icon: <Settings className="w-5 h-5 text-accent-orange" />,
       description: "Rustproof dual-rope pulley and wall-mounted drying systems to optimize balcony floor space.",
       items: servicesList.filter((s) => s.category === "cloth-hangers"),
+    },
+    {
+      id: "sports-nets",
+      name: "Sports Nets (1 Service)",
+      icon: <Trophy className="w-5 h-5 text-accent-orange" />,
+      description: "High-impact boundary netting for football grounds, cricket pitches, and school terraces.",
+      items: servicesList.filter((s) => s.category === "sports-nets"),
+    },
+    {
+      id: "cricket-nets",
+      name: "Cricket Practice Nets (1 Service)",
+      icon: <Target className="w-5 h-5 text-accent-orange" />,
+      description: "Professional multi-lane indoor and outdoor cricket nets custom installed for residences and clubs.",
+      items: servicesList.filter((s) => s.category === "cricket-nets"),
     },
   ];
 

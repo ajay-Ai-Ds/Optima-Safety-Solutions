@@ -65,8 +65,8 @@ export default function TermsAndConditionsPage() {
               All installation rates, project bills, payment terms, and applicable local taxes are declared clearly in the physical quotation shared with the homeowner. Our official pricing schemas are marked as:
             </p>
             <div className="pt-1">
-              <span className="text-xs font-bold text-accent-orange uppercase bg-orange-50 border border-orange-100 px-3 py-1.5 rounded-md inline-block">
-                Content Required From Client
+              <span className="text-xs font-bold text-slate-700 uppercase bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md inline-block">
+                50% Advance Booking & 50% Post-Installation Payment
               </span>
             </div>
 
@@ -77,8 +77,8 @@ export default function TermsAndConditionsPage() {
               Optima Safety Solutions installs high-quality monofilament safety netting and invisible grills. Warranty terms vary by material mesh thickness and UV-stability ratings. Standard warranty duration agreements are strictly subject to client confirmation and are marked as:
             </p>
             <div className="pt-1">
-              <span className="text-xs font-bold text-accent-orange uppercase bg-orange-50 border border-orange-100 px-3 py-1.5 rounded-md inline-block">
-                Content Required From Client
+              <span className="text-xs font-bold text-slate-700 uppercase bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md inline-block">
+                3 to 5 Years Warranty on Select Premium Netting & Grills
               </span>
             </div>
 

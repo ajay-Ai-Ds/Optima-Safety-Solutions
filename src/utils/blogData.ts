@@ -9,7 +9,7 @@ export interface BlogArticle {
   publishedAt: string;
   author: string;
   readingTime: string;
-  category: "safety-nets" | "invisible-grills" | "cloth-hangers";
+  category: "safety-nets" | "invisible-grills" | "cloth-hangers" | "sports-nets" | "cricket-nets";
   categoryLabel: string;
   image: string;
   summary: string;

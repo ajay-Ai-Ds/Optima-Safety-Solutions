@@ -65,8 +65,9 @@ export default function Footer() {
                 { label: "Pigeon Safety Nets", href: "/services/pigeon-safety-nets" },
                 { label: "Balcony Invisible Grills", href: "/services/balcony-invisible-grills" },
                 { label: "Window Invisible Grills", href: "/services/window-invisible-grills" },
-                { label: "Staircase Invisible Grills", href: "/services/staircase-invisible-grills" },
                 { label: "Ceiling Cloth Hangers", href: "/services/ceiling-cloth-hangers" },
+                { label: "Sports Nets", href: "/services/sports-nets" },
+                { label: "Cricket Practice Nets", href: "/services/cricket-practice-nets" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link

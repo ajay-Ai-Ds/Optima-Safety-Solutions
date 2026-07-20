@@ -29,14 +29,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // 2. Service Category Routes
-  const categoryRoutes = ["/services/safety-nets", "/services/invisible-grills", "/services/cloth-hangers"].map(
-    (route) => ({
-      url: `${baseUrl}${route}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    })
-  );
+  const categoryRoutes = [
+    "/services/safety-nets",
+    "/services/invisible-grills",
+    "/services/cloth-hangers",
+    "/services/sports-nets",
+    "/services/cricket-nets",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
 
   // 3. Dynamic Service Pages (14 Services)
   const serviceRoutes = Object.keys(servicesData).map((slug) => ({

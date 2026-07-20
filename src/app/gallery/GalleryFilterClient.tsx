@@ -8,7 +8,7 @@ import LightboxGallery from "@/components/ui/lightbox-gallery";
 
 interface GalleryPhoto {
   image: string;
-  category: "safety-nets" | "invisible-grills" | "cloth-hangers" | "projects" | "team" | "materials" | "apartment";
+  category: "safety-nets" | "invisible-grills" | "cloth-hangers" | "sports-nets" | "cricket-nets" | "projects" | "team" | "materials" | "apartment";
   categoryLabel: string;
   location: string;
   serviceName: string;
@@ -119,6 +119,8 @@ const filters = [
   { value: "safety-nets", label: "Safety Nets" },
   { value: "invisible-grills", label: "Invisible Grills" },
   { value: "cloth-hangers", label: "Cloth Hangers" },
+  { value: "sports-nets", label: "Sports Nets" },
+  { value: "cricket-nets", label: "Cricket Practice Nets" },
   { value: "projects", label: "Projects" },
   { value: "team", label: "Team" },
   { value: "materials", label: "Materials" },
